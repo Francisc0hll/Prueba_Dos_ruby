@@ -27,6 +27,16 @@ def promedio_alumnos(arreglo)
     end
 end
 
+def cantidad_inasistencias(arreglo)
+    arreglo.each_with_index do |elemento, index|
+        contador_inasistencias = 0
+        elemento.each_with_index do |elem, indice|
+            contador_inasistencias += 1 if elem == 'A' && indice != 0
+        end
+        puts "Alumno : #{elemento[0]}, tiene : #{contador_inasistencias} inasistencias"
+    end
+end
+
 arreglo_alumnos = read_alum('alumnos.csv')
 
 opcion = 0
@@ -40,7 +50,7 @@ while opcion != 4
     when 1
         promedio_alumnos(arreglo_alumnos)
     when 2
-        
+        cantidad_inasistencias(arreglo_alumnos)
     when 3
         
     when 4
