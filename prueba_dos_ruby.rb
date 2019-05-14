@@ -9,7 +9,7 @@ end
 def menu
     
     
-    puts "\nBienvenido al sistema de entrega de notas de curso G22 \n"
+    puts "\n Bienvenido al sistema de entrega de notas de curso G22 \n"
     puts "########################################################\n"
     puts "ingrese una de las siguientes opciones del menú \n"
     puts "1) Listar todos los alumnos y sus promedios: \n"
